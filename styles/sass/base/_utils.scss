@@ -1,0 +1,80 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+$sides: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  x: inline,
+  y: block,
+);
+
+@each $key, $side in $sides {
+  @for $i from 0 to 6 {
+    .m#{$key}-#{$i} {
+      margin-#{$side}: $i * 0.5rem;
+    }
+
+    .p#{$key}-#{$i} {
+      padding-#{$side}: $i * 0.5rem;
+    }
+  }
+}
+
+.btn {
+  all: unset;
+  box-sizing: border-box;
+  padding: 15px 45px;
+  background: $cyan-blue-dark;
+  display: inline-block;
+  transform: skewX(-10deg);
+  color: $white;
+}
+
+.text-highlight {
+  color: $greenish-cyan;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.skewed {
+  transform: skewX(-5deg);
+}
+
+.normal-gradient {
+  background: linear-gradient(to bottom right, map-get($gradients, normal));
+}
+
+.light-gradient {
+  background: linear-gradient(to bottom right, map-get($gradients, light));
+}
+
+.dark-gradient {
+  background: linear-gradient(to bottom right, map-get($gradients, dark));
+}
+
+.btn-gradient {
+  @extend .btn, .normal-gradient;
+}
+
+.showcase-btn-gradient {
+  @extend .btn;
+  background: linear-gradient(97deg, #144558 -3.31%, #0e3b4c 112.39%);
+}
+
+.btn-light-gradient {
+  @extend .btn, .light-gradient;
+}
+
+.btn-dark-gradient {
+  @extend .btn, .dark-gradient;
+}

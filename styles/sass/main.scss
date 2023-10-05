@@ -1,0 +1,44 @@
+@import "base/variables";
+@import "base/utils";
+@import "base/reset";
+
+// components
+@import "components/card";
+
+.main-bg {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(/images/base/showcase-bg.jpg) center / cover fixed;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+    width: 734px;
+    height: 734px;
+    background: radial-gradient(#3fd2ec4d, transparent);
+    border-radius: 50%;
+    filter: blur(250px);
+  }
+
+  &::after {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+// partials
+@import "partials/header";
+@import "partials/showcase";
+@import "partials/about";
+@import "partials/tournaments";
+@import "partials/shop";
+@import "partials/news";
