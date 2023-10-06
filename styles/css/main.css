@@ -564,4 +564,121 @@ section#news .container {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-block: 20px;
+}
+
+section#contact label,
+section#contact input,
+section#contact select,
+section#contact textarea {
+  width: 100%;
+}
+section#contact label {
+  display: block;
+  margin-bottom: 16px;
+}
+section#contact input,
+section#contact select,
+section#contact textarea {
+  padding: 20px;
+  background: transparent;
+  border: 1px solid #173352;
+  color: #fff;
+}
+section#contact input::placeholder, section#contact input::-webkit-input-placeholder,
+section#contact select::placeholder,
+section#contact select::-webkit-input-placeholder,
+section#contact textarea::placeholder,
+section#contact textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+section#contact .info-card {
+  background: #0a1f35;
+  padding: 40px;
+}
+section#contact .info-card ul {
+  display: grid;
+  gap: 1em;
+}
+section#contact .info-card ul li {
+  padding-left: 1em;
+}
+section#contact .info-card ul li p {
+  margin-bottom: 0.5em;
+}
+section#contact .btn-light-gradient {
+  grid-column: 2;
+  justify-self: start;
+}
+section#contact li::marker {
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+}
+section#contact li:nth-child(1)::marker {
+  content: "\f3c5";
+}
+section#contact li:nth-child(2)::marker {
+  content: "\f095";
+}
+section#contact li:nth-child(3)::marker {
+  content: "\f0e0";
+}
+section#contact .contact-form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  gap: 30px;
+}
+section#contact .info-card {
+  grid-row: span 3;
+  align-self: start;
+}
+section#contact .message-wrapper {
+  grid-column: span 2;
+}
+@media (max-width: 910px) {
+  section#contact .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#contact .info-card {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+}
+@media (max-width: 710px) {
+  section#contact .contact-form {
+    grid-template-columns: 1fr;
+  }
+  section#contact .info-card,
+  section#contact .message-wrapper {
+    grid-column: span 1;
+  }
+}
+
+section#level-up .container {
+  background: url(/images/base/tournament.png) top -54px center/cover;
+  padding: 60px;
+}
+section#level-up .container > * {
+  transform: skew(5deg);
+}
+section#level-up .container > div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+section#level-up .container > div p {
+  width: 570px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+section#level-up .container > div a {
+  margin-left: auto;
+}
+section#level-up .image-wrapper {
+  background: linear-gradient(#0a1f35, #040d17);
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

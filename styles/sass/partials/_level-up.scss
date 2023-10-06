@@ -1,0 +1,35 @@
+section#level-up {
+  .container {
+    background: url(/images/base/tournament.png) top -54px center / cover;
+    padding: 60px;
+    & > * {
+      transform: skew(5deg);
+    }
+
+    & > div {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+
+      p {
+        width: 570px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+      }
+
+      a {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .image-wrapper {
+    background: linear-gradient(map-get($gradients, normal));
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+    border-radius: 50%;
+  }
+}
