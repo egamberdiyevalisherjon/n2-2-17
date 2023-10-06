@@ -6,7 +6,7 @@
 @import "components/card";
 
 .main-bg {
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   background: url(/images/base/showcase-bg.jpg) center / cover fixed;
@@ -44,3 +44,6 @@
 @import "partials/news";
 @import "partials/contact";
 @import "partials/level-up";
+
+// responsive
+@import "responsive";

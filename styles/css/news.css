@@ -3,4 +3,7 @@ section#news .container {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-block: 20px;
+}
+section#news .container :nth-child(4) {
+  display: none;
 }/*# sourceMappingURL=news.css.map */

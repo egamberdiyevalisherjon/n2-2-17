@@ -4,5 +4,9 @@ section#news {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-block: 20px;
+
+    :nth-child(4) {
+      display: none;
+    }
   }
 }
